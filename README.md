@@ -16,8 +16,8 @@ to
 ```js
 var myModule = "./path/to/myModule";
 
-new Promise(function(_resolve) {
-  _resolve(require(myModule));
+new Promise(function(resolve) {
+  resolve(require(myModule));
 }).then(function (module) {
   console.log(module);
 });
