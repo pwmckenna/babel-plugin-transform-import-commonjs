@@ -1,0 +1,31 @@
+{
+  "name": "babel-plugin-transform-system-import-commonjs",
+  "version": "1.0.0",
+  "description": "Transform ES2015 System.import to CommonJS require",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir lib",
+    "prepublish": "./node_modules/.bin/babel src --out-dir lib"
+  },
+  "repository": "github:mkyurchev/babel-plugin-transform-system-import-commonjs",
+  "keywords": [
+    "babel-plugin",
+    "modules",
+    "system",
+    "import",
+    "commonjs"
+  ],
+  "author": "Miroslav Kyurchev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkyurchev/babel-plugin-transform-system-import-commonjs/issues"
+  },
+  "homepage": "https://github.com/mkyurchev/babel-plugin-transform-system-import-commonjs#readme",
+  "dependencies": {
+    "babel-template": "^6.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0"
+  }
+}
