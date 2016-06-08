@@ -3,7 +3,7 @@ import template from "babel-template";
 let buildPromise = template(`
   new Promise(function(resolve) {
     resolve(require($0));
-  });
+  }.bind(this));
 `);
 
 export default function () {

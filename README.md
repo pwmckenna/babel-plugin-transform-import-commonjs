@@ -18,7 +18,7 @@ var myModule = "./path/to/myModule";
 
 new Promise(function(resolve) {
   resolve(require(myModule));
-}).then(function (module) {
+}.bind(this)).then(function (module) {
   console.log(module);
 });
 ```
