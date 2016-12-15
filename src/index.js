@@ -13,7 +13,7 @@ export default function () {
         let callee = path.get("callee");
         let args   = path.get("arguments");
 
-        if (!callee.matchesPattern("System.import") ||
+        if (!callee.matchesPattern("import") ||
             !args.length) return;
 
         path.scope.rename("require");
